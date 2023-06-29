@@ -1,0 +1,207 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dd894015-c867-45c7-a1bd-59dfabb10bf5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW 1</ID>
+  <Name>DW 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b030191f-c3bf-41cf-a445-7964330ed866">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Comment" msprop:DbTableName="Comment" msprop:FriendlyName="Comment" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="56746cdd-2350-437e-9d47-0d27208c4149">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="7c4a29d1-30fe-4768-87f3-19b6b87d104f" type="xs:long" />
+                  <xs:element name="IdPost" msprop:FriendlyName="IdPost" msprop:DbColumnName="IdPost" msprop:design-time-name="94b0a992-cfd5-4c29-9984-7bf54f9aa876" type="xs:long" />
+                  <xs:element name="CommentCount" msprop:FriendlyName="CommentCount" msprop:DbColumnName="CommentCount" msprop:design-time-name="1713e51d-3f02-422e-b884-01896463d362" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9a7c5a18-316e-4782-a97e-90434b2f0341">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdPost" msprop:FriendlyName="IdPost" msprop:DbColumnName="IdPost" msprop:design-time-name="d39d87a7-9e31-4784-9526-868a79e4130f" type="xs:long" />
+                  <xs:element name="IdUser" msprop:FriendlyName="IdUser" msprop:DbColumnName="IdUser" msprop:design-time-name="691a13a3-f7af-43e7-8a17-e9312175dfda" type="xs:int" />
+                  <xs:element name="IdTime" msprop:FriendlyName="IdTime" msprop:DbColumnName="IdTime" msprop:design-time-name="3833e27f-6a2f-4889-8df0-ada82f7af876" type="xs:int" />
+                  <xs:element name="LikeCount" msprop:FriendlyName="LikeCount" msprop:DbColumnName="LikeCount" msprop:design-time-name="7ce080c5-30cc-40dc-8dee-152944d52fc0" type="xs:int" />
+                  <xs:element name="CommentCount" msprop:FriendlyName="CommentCount" msprop:DbColumnName="CommentCount" msprop:design-time-name="d4123841-77d0-48c2-8ba0-a2bbf8a32a1a" type="xs:int" />
+                  <xs:element name="ShareCount" msprop:FriendlyName="ShareCount" msprop:DbColumnName="ShareCount" msprop:design-time-name="a7a3ee42-53d1-49bb-a99b-467f14fd3eb5" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Like" msprop:DbTableName="Like" msprop:FriendlyName="Like" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="32fbb37f-98d6-47d4-8c9d-268782fb08df">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="b5ab051c-9002-4e3c-ae1f-a85acb6e5571" type="xs:long" />
+                  <xs:element name="idPost" msprop:FriendlyName="idPost" msprop:DbColumnName="idPost" msprop:design-time-name="698ba4e2-8b5c-45b6-8a9d-4b7c2ff5facf" type="xs:long" />
+                  <xs:element name="LikeCount" msprop:FriendlyName="LikeCount" msprop:DbColumnName="LikeCount" msprop:design-time-name="32988774-9190-4fc9-ae7a-3f39f725f8d5" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Post" msprop:DbTableName="Post" msprop:FriendlyName="Post" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="75280b11-7a16-4a2e-a6b6-8d28a5a6d57b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="b526e514-ea6f-4f9b-989e-4d0e0b11070b" type="xs:long" />
+                  <xs:element name="IdUser" msprop:FriendlyName="IdUser" msprop:DbColumnName="IdUser" msprop:design-time-name="e20461f8-9197-47e0-aa6e-b49fdeb5ec9e" type="xs:int" />
+                  <xs:element name="Title" msprop:FriendlyName="Title" msprop:DbColumnName="Title" msprop:design-time-name="cd593b08-7e6a-4b32-85b4-873e2dcff762">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VideoUrl" msprop:FriendlyName="VideoUrl" msprop:DbColumnName="VideoUrl" msprop:design-time-name="16fecc90-d119-42f6-854e-dc4857c2623c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2147483647" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Duration" msprop:FriendlyName="Duration" msprop:DbColumnName="Duration" msprop:design-time-name="561e7f1f-0a11-4b6e-a049-b90071226c90" type="xs:int" />
+                  <xs:element name="HashTag" msprop:FriendlyName="HashTag" msprop:DbColumnName="HashTag" msprop:design-time-name="30edb659-3cd8-4527-a5e6-2011c6b41c59">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Share" msprop:DbTableName="Share" msprop:FriendlyName="Share" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7053b4d5-890e-4fc1-8716-f11a71d146e1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="7ddfd013-976a-40ef-932b-425d612f3d34" type="xs:long" />
+                  <xs:element name="idPost" msprop:FriendlyName="idPost" msprop:DbColumnName="idPost" msprop:design-time-name="411b08a7-23a4-4c6f-8ecd-4938d5e78bcc" type="xs:long" />
+                  <xs:element name="ShareCount" msprop:FriendlyName="ShareCount" msprop:DbColumnName="ShareCount" msprop:design-time-name="befa1ebf-978e-42d7-9fae-6a69a031fe21" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5bfefc7e-0e1d-46c1-8762-5dc7176cfa8d">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="855e8f07-472a-457d-ba8b-8c96587b7845" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="18215e74-2ca3-47b9-ae7b-e1de0daf18f8" type="xs:int" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="a014a336-3055-489a-a890-f4ae9fd11f2b" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="5ab7a14a-3777-4cc4-abfe-2a7929e12b6d" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_User" msprop:DbTableName="User" msprop:FriendlyName="User" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="84c893bb-96bc-495d-be1b-1b4e590334ee">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:FriendlyName="Id" msprop:DbColumnName="Id" msprop:design-time-name="3396db20-819d-41eb-a2d0-11b993baac23" type="xs:int" />
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="1f917c38-1bc1-4f15-a990-828853d42ac7">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NickName" msprop:FriendlyName="NickName" msprop:DbColumnName="NickName" msprop:design-time-name="112a992e-de2c-49cc-bca7-7bbae165e4f9">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Verified" msprop:FriendlyName="Verified" msprop:DbColumnName="Verified" msprop:design-time-name="2fc9c23e-c78d-402a-80ad-2352caa09ed9" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Comment" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Like_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Like" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Post_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Post" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Share_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Share" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_User_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_User" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:keyref name="FK_Share_Post" refer="dbo_Post_Constraint1">
+          <xs:selector xpath=".//dbo_Share" />
+          <xs:field xpath="idPost" />
+        </xs:keyref>
+        <xs:keyref name="FK_Post_User" refer="dbo_User_Constraint1">
+          <xs:selector xpath=".//dbo_Post" />
+          <xs:field xpath="IdUser" />
+        </xs:keyref>
+        <xs:keyref name="FK_Like_Post" refer="dbo_Post_Constraint1">
+          <xs:selector xpath=".//dbo_Like" />
+          <xs:field xpath="idPost" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Time" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="IdTime" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Post" refer="dbo_Post_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="IdPost" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_User" refer="dbo_User_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="IdUser" />
+        </xs:keyref>
+        <xs:keyref name="FK_Comment_Post" refer="dbo_Post_Constraint1">
+          <xs:selector xpath=".//dbo_Comment" />
+          <xs:field xpath="IdPost" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW_x0020_1 xmlns="" />
+  </Schema>
+</DataSourceView>

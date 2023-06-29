@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="TECHCARE_MSSQLSERVER2.DW.sa"
+  DTS:DTSID="{A6F9A8F1-C8C8-4E12-AE66-3A2429601D46}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=TECHCARE\MSSQLSERVER2;User ID=sa;Initial Catalog=DW;Application Name=SSIS-ETL-{A6F9A8F1-C8C8-4E12-AE66-3A2429601D46}TECHCARE\MSSQLSERVER2.DW.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVvz9A/mVMk2ty1e6lkgsSwAAAAACAAAAAAAQZgAAAAEAACAAAABF8bAiiJ8JBV/p3i/Q2sC4c82u0wtGoehissZU5EiQbwAAAAAOgAAAAAIAACAAAACU7SMUVBC0fTltMFWSwQgv1EuWix2hdR7vqedyJ7rTqYAAAABQ0Y6gvCB6b0Xv9ZKsyjiI67/vHmNGvs5lvwmUv/QEcwbenj8PFt7mQ+2YcJRziLqaN6YzYvw+U3S6ig56M861cuCOtsAdiH1eIqxfMt1J0Eo3hmiPnBerBMpBJwWIq96/W7vp0NQqaNcpDSbF1PVc0yS4vT2EBP2U0mC+2qq+e0AAAABgtNZdLxlPAWLxrA8PXqfkS11MEYljAbVUGhlVtcAjDU6zkVdWSTGYhhwUKfd1TrZ85TxumddXSdBme/fNS3VN</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

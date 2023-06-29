@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="TECHCARE_MSSQLSERVER2.DW.sa1"
+  DTS:DTSID="{48859E1C-7E55-43F2-B09E-2BD22DA2402C}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=TECHCARE\MSSQLSERVER2;User ID=sa;Initial Catalog=DW;Provider=SQLNCLI11.1;Application Name=SSIS-ETL-{48859E1C-7E55-43F2-B09E-2BD22DA2402C}TECHCARE\MSSQLSERVER2.DW.sa1;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVvz9A/mVMk2ty1e6lkgsSwAAAAACAAAAAAAQZgAAAAEAACAAAABdgqdSVH0GCz8Ldw69tMcNYZ6Qo9UCfxyq9XVGQDW8uAAAAAAOgAAAAAIAACAAAABwoMW8/cq4JZhZxkObHAI7D+gtDB8YLd5//+4FDhwUY4AAAABaYlfRnBz1lGWumNQeRm1STdt7zQjD4XgHAK834/i0VAl59KOmccDo56V9Y4VCLChS/734aUUWnhINVbszEqBkV1bO7LqGZSh7pCSFchyAIuHjWZKWIGgrv4pWZ1XSl24Y22kxUSl4oxqgOEYDW0ZBcjhTOdAo92UAP5cwwEbLYkAAAAAzkgL6P86l/7Y2OREYgwK1V9u+ItI7Zx8hmzNvVUGrEqYZ1RmyRwsl6KmwUSMNOH5Weo28KTX6/xlB3Le2xTG+</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
